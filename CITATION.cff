@@ -1,0 +1,103 @@
+# Citation File Format (CFF)
+# Use this file to cite this software in academic publications
+# More info: https://citation-file-format.github.io/
+
+cff-version: 1.2.0
+title: 'Biometric Authentication & Anti-Spoofing Security Research System'
+message: 'If you use this software in your research, please cite it as below.'
+type: software
+authors:
+  - family-names: 'Your Last Name'
+    given-names: 'Your First Name'
+    # email: your.email@example.com
+    # orcid: 'https://orcid.org/0000-0000-0000-0000'
+    # affiliation: 'Your Institution'
+repository-code: 'https://github.com/yourusername/biometric-security-research'
+url: 'https://github.com/yourusername/biometric-security-research'
+abstract: >-
+  A comprehensive biometric security research platform that demonstrates
+  both offensive (red team) and defensive (blue team) capabilities.
+  This system implements face and fingerprint authentication, systematically
+  tests against presentation attacks (photo, video, 3D mask, deepfakes,
+  adversarial attacks), and evaluates anti-spoofing defenses with
+  comprehensive security metrics.
+keywords:
+  - biometric authentication
+  - face recognition
+  - fingerprint matching
+  - anti-spoofing
+  - liveness detection
+  - presentation attacks
+  - adversarial attacks
+  - security research
+  - computer vision
+  - machine learning
+  - deepfake detection
+license: MIT
+version: '2.0.0'
+date-released: '2024-11-14'
+
+# Preferred citation format
+preferred-citation:
+  type: software
+  authors:
+    - family-names: 'Your Last Name'
+      given-names: 'Your First Name'
+  title: 'Biometric Authentication & Anti-Spoofing Security Research System'
+  version: '2.0.0'
+  year: 2024
+  url: 'https://github.com/yourusername/biometric-security-research'
+
+# Alternative citation formats
+references:
+  # If you have a research paper about this software
+  - type: article
+    authors:
+      - family-names: 'Your Last Name'
+        given-names: 'Your First Name'
+    title: 'A Comprehensive Framework for Biometric Security Research'
+    # journal: 'Journal Name'
+    # year: 2024
+    # doi: '10.xxxx/xxxxx'
+
+# Related publications that should be cited
+  - type: article
+    authors:
+      - family-names: 'Chingovska'
+        given-names: 'Ivana'
+    title: 'On the Effectiveness of Local Binary Patterns in Face Anti-spoofing'
+    year: 2012
+
+  - type: article
+    authors:
+      - family-names: 'Patel'
+        given-names: 'Keyurkumar'
+    title: 'Secure Face Unlock: Spoof Detection on Smartphones'
+    year: 2016
+
+  - type: article
+    authors:
+      - family-names: 'Akhtar'
+        given-names: 'Naveed'
+      - family-names: 'Mian'
+        given-names: 'Ajmal'
+    title: 'Threat of Adversarial Attacks on Deep Learning in Computer Vision'
+    year: 2018
+
+# Dependencies that should be acknowledged
+  - type: software
+    authors:
+      - family-names: 'Serengil'
+        given-names: 'Sefik Ilkin'
+    title: 'DeepFace: A Lightweight Face Recognition and Facial Attribute Analysis Framework'
+    repository-code: 'https://github.com/serengil/deepface'
+
+# Example BibTeX entry (for reference):
+# @software{biometric_security_research,
+#   author = {Your Name},
+#   title = {Biometric Authentication \& Anti-Spoofing Security Research System},
+#   year = {2024},
+#   version = {2.0.0},
+#   url = {https://github.com/yourusername/biometric-security-research},
+#   license = {MIT}
+# }
