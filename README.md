@@ -1,8 +1,32 @@
 # Biometric Authentication & Anti-Spoofing Security Research System
 
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![GitHub Issues](https://img.shields.io/github/issues/yourusername/biometric-security-research)](https://github.com/yourusername/biometric-security-research/issues)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A comprehensive biometric security research platform that demonstrates both offensive (red team) and defensive (blue team) capabilities. This system implements face and fingerprint authentication, systematically tests it against presentation attacks (photo, video, 3D mask, deepfakes), and evaluates anti-spoofing defenses.
 
 **Perfect for cybersecurity + AI/ML portfolio projects.**
+
+## 🆕 What's New in v2.0?
+
+Version 2.0 is a major upgrade with enterprise-grade features! See [README_V2.md](README_V2.md) for complete v2.0 documentation.
+
+**Major new features:**
+- 🔐 **Enterprise Security**: Input validation, rate limiting, audit logging, secure file operations
+- ⚔️ **Advanced Attacks**: Adversarial patches, FGSM, adversarial glasses, pixel attacks, morphing
+- 📊 **Interactive Reports**: Plotly dashboards with real-time metrics and visualizations
+- 🎯 **Enhanced CLI**: Progress bars, status dashboard, better UX
+- ⚡ **Performance**: Memory optimization, LRU caching, real-time monitoring
+- 🧪 **Testing**: Comprehensive pytest suite with coverage
+- 📦 **Docker Support**: Containerized deployment
+- 🎛️ **Configuration**: Centralized config with environment variables
+
+**Quick Links:**
+- [v2.0 Features](README_V2.md) | [Changelog](CHANGELOG.md) | [Contributing](CONTRIBUTING.md) | [Security Policy](SECURITY.md)
 
 ## Overview
 

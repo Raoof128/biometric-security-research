@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+htmlcov/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+
+# Documentation (exclude from image)
+docs/
+*.md
+!README.md
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Data files (mounted as volumes)
+data/enrolled_users/*
+data/test_samples/*
+data/attack_samples/*
+data/results/*
+!data/.gitkeep
+!data/**/.gitkeep
+
+# Logs (mounted as volumes)
+logs/*.log
+
+# Temporary files
+*.tmp
+*.bak
+tmp/
+temp/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Test files
+tests/
+test_*.py
+*_test.py
+
+# Development files
+.env
+.env.local
+.env.*.local
+
+# Models (mount as volume instead)
+biometric/models/*.dat
+biometric/models/*.h5
+biometric/models/*.pkl

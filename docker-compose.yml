@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  biometric-security:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: biometric-security-research:2.0.0
+    container_name: biometric-security
+
+    environment:
+      # Override with .env file
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+      - ENABLE_GPU=false
+      - MEMORY_LIMIT_MB=4096
+
+    env_file:
+      - .env
+
+    volumes:
+      # Mount data directory for persistence
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./biometric/models:/app/biometric/models
+
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4G
+        reservations:
+          cpus: '1.0'
+          memory: 2G
+
+    # Network mode
+    network_mode: bridge
+
+    # Restart policy
+    restart: unless-stopped
+
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+
+    # Read-only root filesystem (except volumes)
+    read_only: false
+
+    # Capabilities
+    cap_drop:
+      - ALL
+    cap_add:
+      - DAC_OVERRIDE
+      - CHOWN
+      - SETGID
+      - SETUID
+
+    # Command override for interactive use
+    # command: ["python", "cli_enhanced.py", "status"]
+
+    stdin_open: true
+    tty: true
+
+# Optional: GPU support (requires NVIDIA Docker)
+# Uncomment if you have GPU support
+#  biometric-security-gpu:
+#    extends:
+#      service: biometric-security
+#    runtime: nvidia
+#    environment:
+#      - NVIDIA_VISIBLE_DEVICES=all
+#      - ENABLE_GPU=true
+
+volumes:
+  data:
+    driver: local
+  logs:
+    driver: local
+  models:
+    driver: local
+
+networks:
+  default:
+    driver: bridge
